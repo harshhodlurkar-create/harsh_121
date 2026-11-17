@@ -1,0 +1,11 @@
+<header class="topbar">Intelligent Transaction Banking System</header>
+
+<div class="card">
+  <h2>Register</h2>
+  <input placeholder="Name" [(ngModel)]="name" />
+  <input placeholder="Email" [(ngModel)]="email" />
+  <input placeholder="Password" type="password" [(ngModel)]="password" />
+  <button (click)="register()">Register</button>
+  <p class="ok">{{ message() }}</p>
+  <p class="err">{{ error() }}</p>
+</div>

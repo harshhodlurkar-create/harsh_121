@@ -1,0 +1,86 @@
+:root {
+  --navy: #0b2545;
+  --blue: #1e6fd9;
+  --blue-dark: #1558b0;
+  --bg: #eef3f9;
+  --text: #1c2b3a;
+  --green: #2e7d32;
+  --orange: #ef8a00;
+  --red: #c62828;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.topbar {
+  background: var(--navy);
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  max-width: 380px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(11, 37, 69, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card h2 {
+  margin: 0 0 4px;
+  text-align: center;
+  color: var(--navy);
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(30, 111, 217, 0.18);
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover { background: var(--blue-dark); }
+
+.ok  { color: var(--green); margin: 0; text-align: center; }
+.err { color: var(--red);   margin: 0; text-align: center; }
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+.badge.success { background: var(--green); }
+.badge.flagged { background: var(--orange); }
+.badge.blocked { background: var(--red); }
