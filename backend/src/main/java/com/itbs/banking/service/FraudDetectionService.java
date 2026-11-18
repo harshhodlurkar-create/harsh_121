@@ -27,7 +27,7 @@ public class FraudDetectionService {
     public void checkTransaction(Transaction txn, Account account) {
 
         // Rule 1: Large single transaction
-        if (txn.getAmount() > LARGE_AMOUNT_THRESHOLD) {D
+        if (txn.getAmount() > LARGE_AMOUNT_THRESHOLD) {
             flagTransaction(txn, "Large transaction amount exceeds threshold");
             return;
         }
